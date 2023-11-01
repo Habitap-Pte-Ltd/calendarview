@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalendarView"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".OldCalendarViewActivity"
+            android:label="@string/title_activity_old_calendar"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".SelectionModesActivity"
+            android:label="@string/title_activity_selections"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".BasicActivityDecorated"
+            android:label="@string/title_activity_decorators"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".SwappableBasicActivityDecorated"
+            android:label="@string/title_activity_basic_modes"
+            android:parentActivityName=".MainActivity"
+            android:exported="true">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".DynamicSettersActivity"
+            android:label="@string/title_activity_dynamic_setters"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".CustomTileDimensions"
+            android:label="@string/title_activity_custom_tile_size"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".DialogsActivity"
+            android:label="@string/title_activity_dialogs"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".MultipleViewActivity"
+            android:label="@string/title_activity_multiple_view"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".MultipleSizeActivity"
+            android:label="@string/title_activity_multiple_size"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="true"
+            android:name=".GettersActivity"
+            android:label="@string/title_activity_getters"
+            android:parentActivityName=".MainActivity"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="com.habitap.custom.calendarview.SAMPLE"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
