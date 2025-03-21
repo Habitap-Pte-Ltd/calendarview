@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace = "com.habitap.custom.calendarview"
-    compileSdk = 34
+    compileSdk = rootProject.extra["target_sdk_version"] as Int
 
     defaultConfig {
-        minSdk = 24
+        minSdk = rootProject.extra["min_sdk_version"] as Int
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -24,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
 }
 
