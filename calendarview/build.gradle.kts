@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace = "com.habitap.custom.calendarview"
-    compileSdk = rootProject.extra["target_sdk_version"] as Int
+    compileSdk = "${project.property("target_sdk_version")}".toInt()
 
     defaultConfig {
-        minSdk = rootProject.extra["min_sdk_version"] as Int
+        minSdk = "${project.property("min_sdk_version")}".toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
